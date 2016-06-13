@@ -1,13 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.luisamoncada.miapp.MainActivity">
+
+<TableLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.luisamoncada.miapp.MainActivity">
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="150dp"
+    android:baselineAligned="false"
+    android:layout_alignParentBottom="true">
 
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false">
+
+        <ImageButton android:id="@+id/imageButton"
+            android:src="@mipmap/ipeluqueriag"
+            android:layout_column="0" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton2"
+            android:src="@mipmap/iveteg"
+            android:layout_column="1" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton3"
+            android:src="@mipmap/ipaseog"
+            android:layout_column="2" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton android:id="@+id/imageButton4"
+            android:layout_column="0"
+            android:src="@mipmap/ihotelg"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton5"
+            android:src="@mipmap/icomidag"
+            android:layout_column="1" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton6"
+            android:src="@mipmap/ifamiliag"
+            android:layout_column="2" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton android:id="@+id/imageButton7"
+            android:layout_column="0"
+            android:src="@mipmap/ibuscarg"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton8"
+            android:layout_column="1"
+            android:src="@mipmap/iconfig"/>
+    </TableRow>
+</TableLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"/>
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="+Koticas."
+        android:textSize="50dp"
+        android:fontFamily="casual"
 
+        android:id="@+id/textView"
+        android:layout_marginTop="43dp"
+        android:textColor="#f6a417"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
+
+

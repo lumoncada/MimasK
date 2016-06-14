@@ -10,9 +10,100 @@
     tools:context="com.luisamoncada.miapp.Acomida">
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Comercio."
+        android:textSize="25dp"
+        android:fontFamily="casual"
+        android:id="@+id/textView"
+        android:textColor="#f6a417"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@mipmap/icomidap"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+    <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hola1"/>
+        android:layout_marginLeft="1dp"
+        android:id="@+id/radioGroup"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp"
+        android:layout_above="@+id/bir">
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perr@s."
+            android:id="@+id/rPerros"
+            android:checked="false"
+            android:clickable="true"
+            android:textSize="25dp"
+            android:fontFamily="casual"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gat@s."
+            android:id="@+id/rGatos."
+            android:checked="false"
+            android:clickable="true"
+            android:textSize="25dp"
+            android:fontFamily="casual"/>
+
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Especializada."
+        android:id="@+id/rEspecializada"
+        android:checked="false"
+        android:clickable="true"
+        android:textSize="25dp"
+        android:fontFamily="casual"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Juguetes."
+            android:id="@+id/rJuguetes"
+            android:checked="false"
+            android:clickable="true"
+            android:textSize="25dp"
+            android:fontFamily="casual"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accesorios"
+            android:id="@+id/rAccesorios"
+            android:checked="false"
+            android:clickable="true"
+            android:textSize="25dp"
+            android:fontFamily="casual"/>
+    </RadioGroup>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar."
+        android:id="@+id/bir"
+        android:layout_marginBottom="166dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:textSize="25dp"
+        android:fontFamily="casual"/>
 
 </RelativeLayout>
 

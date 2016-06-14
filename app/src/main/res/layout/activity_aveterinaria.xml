@@ -9,11 +9,122 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.luisamoncada.miapp.Aveterinaria">
 
-
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Servicio de Veterinaria."
+        android:textSize="30dp"
+        android:fontFamily="casual"
+        android:id="@+id/textView"
+        android:textColor="#f6a417"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@mipmap/ivetep"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hola9"/>
+        android:layout_marginLeft="1dp"
+        android:id="@+id/radioGroup"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp"
+        android:layout_above="@+id/bir">
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24 Horas."
+            android:id="@+id/rHoras"
+            android:checked="false"
+            android:clickable="true"
+            android:textSize="25dp"
+            android:fontFamily="casual"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inseminación."
+            android:id="@+id/rInseminacion"
+            android:checked="false"
+            android:clickable="true"
+            android:textSize="25dp"
+            android:fontFamily="casual"/>
+
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hospitalización."
+        android:id="@+id/rHospitalizacion"
+        android:checked="false"
+        android:clickable="true"
+        android:textSize="25dp"
+        android:fontFamily="casual"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atencion en casa."
+            android:id="@+id/rAtencion"
+            android:checked="false"
+            android:clickable="true"
+            android:textSize="25dp"
+            android:fontFamily="casual"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Funeraria."
+            android:id="@+id/rFuneraria"
+            android:checked="false"
+            android:clickable="true"
+            android:textSize="25dp"
+            android:fontFamily="casual"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Esterilización."
+            android:id="@+id/rEsterilizacion"
+            android:checked="false"
+            android:clickable="true"
+            android:textSize="25dp"
+            android:fontFamily="casual"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vacunas y desparasitación."
+            android:id="@+id/rvacunas"
+            android:checked="false"
+            android:clickable="true"
+            android:textSize="25dp"
+            android:fontFamily="casual"/>
+
+    </RadioGroup>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar."
+        android:id="@+id/bir"
+        android:layout_marginBottom="79dp"
+        android:clickable="true"
+        android:textSize="25dp"
+        android:fontFamily="casual"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
 
 </RelativeLayout>
 

@@ -18,62 +18,72 @@ tools:context="com.luisamoncada.miapp.MainActivity">
         android:layout_height="match_parent"
         android:baselineAligned="false">
 
-        <ImageButton android:id="@+id/imageButton"
+        <ImageButton android:id="@+id/bpeluqueria"
             android:src="@mipmap/ipeluqueriag"
-            android:layout_column="0" />
+            android:layout_column="0"
+            android:onClick="AbrirPeluqueria" />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/imageButton2"
+            android:id="@+id/bveterinaria"
             android:src="@mipmap/iveteg"
-            android:layout_column="1" />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageButton3"
-            android:src="@mipmap/ipaseog"
-            android:layout_column="2" />
-    </TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <ImageButton android:id="@+id/imageButton4"
-            android:layout_column="0"
-            android:src="@mipmap/ihotelg"/>
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageButton5"
-            android:src="@mipmap/icomidag"
-            android:layout_column="1" />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageButton6"
-            android:src="@mipmap/ifamiliag"
-            android:layout_column="2" />
-    </TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <ImageButton android:id="@+id/imageButton7"
-            android:layout_column="0"
-            android:src="@mipmap/ibuscarg"/>
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageButton8"
             android:layout_column="1"
-            android:src="@mipmap/iconfig"/>
+            android:onClick="AbrirVeterinaria" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bpaseo"
+            android:src="@mipmap/ipaseog"
+            android:layout_column="2"
+            android:onClick="AbrirPaseo" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton android:id="@+id/bhotel"
+            android:layout_column="0"
+            android:src="@mipmap/ihotelg"
+            android:onClick="AbrirHotel" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bcomida"
+            android:src="@mipmap/icomidag"
+            android:layout_column="1"
+            android:onClick="AbrirComida" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bfamilia"
+            android:src="@mipmap/ifamiliag"
+            android:layout_column="2"
+            android:nestedScrollingEnabled="false"
+            android:onClick="AbrirFamilia" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton android:id="@+id/bbuscar"
+            android:layout_column="0"
+            android:src="@mipmap/ibuscarg"
+            android:nestedScrollingEnabled="false"
+            android:onClick="AbrirBuscar" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bconfig"
+            android:layout_column="1"
+            android:src="@mipmap/iconfig"
+            android:onClick="AbrirConfiguracion" />
     </TableRow>
 </TableLayout>
     <TextView
@@ -83,7 +93,6 @@ tools:context="com.luisamoncada.miapp.MainActivity">
         android:text="+Koticas."
         android:textSize="50dp"
         android:fontFamily="casual"
-
         android:id="@+id/textView"
         android:layout_marginTop="43dp"
         android:textColor="#f6a417"

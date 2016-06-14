@@ -6,8 +6,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/iconop"
         android:label="@string/app_name"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-
+        android:theme="@style/Theme.AppCompat.DayNight">
         <activity
             android:name=".Asplash"
             android:label="@string/app_name">
@@ -17,11 +16,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
-            android:label="+Koticas"
-            />
+            android:label="Koticas" />
+        <activity android:name=".Apeluqueria" />
+        <activity android:name=".Aveterinaria" />
+        <activity android:name=".Apaseo" />
+        <activity android:name=".Ahotel" />
+        <activity android:name=".Acomida" />
+        <activity android:name=".Afamilia" />
+        <activity android:name=".Abuscar" />
+        <activity android:name=".Aconfiguracion"></activity>
     </application>
 
 </manifest>

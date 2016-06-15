@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="configuracion"
+        android:text="Herramientas."
         android:textSize="25dp"
         android:fontFamily="casual"
         android:id="@+id/textView"
@@ -29,5 +29,80 @@
         android:src="@mipmap/iconfip"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false">
+
+            <ImageButton android:id="@+id/bweb"
+                android:src="@mipmap/wwwg"
+                android:layout_column="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Visitar pagina Web."
+                android:textSize="25dp"
+                android:fontFamily="casual"
+                android:id="@+id/textView2"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_column="1" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton android:id="@+id/bagregrar"
+                android:layout_column="0"
+                android:src="@mipmap/mapg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Agregar Sitio."
+                android:textSize="25dp"
+                android:fontFamily="casual"
+                android:id="@+id/textView3"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_column="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton android:id="@+id/bmail"
+                android:layout_column="0"
+                android:src="@mipmap/mailg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Enviar mensaje al desarrollador."
+                android:textSize="25dp"
+                android:fontFamily="casual"
+                android:id="@+id/textView4"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_column="1" />
+        </TableRow>
+    </TableLayout>
 
     </RelativeLayout>

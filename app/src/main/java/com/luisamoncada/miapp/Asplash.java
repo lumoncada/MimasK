@@ -12,7 +12,7 @@ import java.util.TimerTask;
 public class Asplash extends AppCompatActivity {
 
     // Duración en milisegundos que se mostrará el splash
-    private static final long SPLASH_SCREEN_DELAY= 10000; // 3 segundos
+    private static final long SPLASH_SCREEN_DELAY= 7000; // 3 segundos 10000
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,7 @@ public class Asplash extends AppCompatActivity {
 
             public void run (){
                 Intent mainIntent = new Intent().setClass(
-                        Asplash.this,MainActivity.class);
+                        Asplash.this,loguin.class);
                 startActivity(mainIntent);
                 finish();
             }
